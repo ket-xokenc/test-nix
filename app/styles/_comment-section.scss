@@ -1,0 +1,60 @@
+.comments {
+  background-color: #fff;
+}
+
+.comment-card {
+  max-width: 360px;
+  margin: 0 15px;
+}
+
+.comment-card__author {
+  font-weight: 600;
+}
+
+.comment-card__rating-bar {
+  color: #fac917;
+  font-size: 20px;
+}
+
+.comment-card__content {
+  color: #747474;
+  margin-top: 16px;
+}
+
+.comments-slider {
+  margin-top: 65px;
+  margin-bottom: 35px;
+  align-self: center;
+}
+
+.comments-slider a {
+  display: inline-block;
+  background-color: #d6d6d6;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.comments-slider a.active {
+  background-color: #b0b0b0;
+}
+
+// media queries
+
+@media (max-width: 770px) {
+  .comment-card:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .comment-card:not(:first-child) {
+    display: none;
+  }
+
+  .comments-slider {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,100 @@
+.professional {
+  background-color: #fff;
+  padding-bottom: 95px;
+}
+
+.option-card {
+  max-width: 360px;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.option-card__icon-box {
+  width: 170px;
+  height: 170px;
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option-card__icon {
+  width: 56px;
+  height: 54px;
+}
+
+.option-card__content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.option-card__title {
+  margin-top: 20px;
+}
+
+.option-card__description {
+  margin-top: 16px;
+  max-width: 66%;
+  text-align: center;
+}
+
+// media queries
+
+@media (max-width: 1024px) {
+  .option-card__title {
+    font-size: calc(12px + 0.8vw);
+    max-width: 95%;
+  }
+
+  .option-card__description {
+    max-width: 90%;
+    font-size: calc(10px + 0.8vw);
+  }
+}
+
+@media (max-width: 600px) {
+  .professional {
+    padding-bottom: 10px;
+  }
+
+  .option-card {
+    flex-direction: row;
+    margin: 20px 0;
+    width: 95%;
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+
+  .option-card__icon-box {
+    border: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .option-card__icon {
+    width: 84px;
+    height: 84px;
+  }
+
+  .option-card__content-box {
+    text-align: left;
+    align-items: stretch;
+    margin-left: 20px;
+  }
+
+  .option-card__title {
+    margin-top: 0;
+  }
+
+  .option-card__description {
+    margin-top: 5px;
+    text-align: left;
+  }
+}
+
