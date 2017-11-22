@@ -1,4 +1,4 @@
-# Zenway.code HTML App Boilerplate
+# HTML App Boilerplate
 
 #How to use
 
